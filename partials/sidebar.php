@@ -23,7 +23,7 @@ if (!empty($surveys)) :
   $survey = $surveys[array_rand($surveys)]; ?> 
       <div class="panel">
         <h5>Random</h5>
-        <p><?php echo $survey['name'];?></p>
+        <p><?php echo htmlentities($survey['name']);?></p>
         <a href="survey.php?survey=<?php echo $survey['id']; ?>">Take this survey</a>
       </div>
  <?php 
