@@ -70,7 +70,7 @@ endif; //End of if statement that executes if the form has been submitted
 <?php include 'partials/header.php'; ?>
   <div class="row">
     <div class="large-9 columns" role="content">
-      <h3>Survey: "<?php echo $survey['name']; ?>"</h3>
+      <h3>Survey: "<?php echo htmlentities($survey['name']); ?>"</h3>
       <?php include 'partials/messages.php'; ?>
       <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
         <ol>
